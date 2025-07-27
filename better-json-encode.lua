@@ -18,13 +18,16 @@ local function escape_str(s)
 end
 
 local function is_array(t)
+	local max = 0
 	local count = 0
-	for k in pairs(t) do
+	for k, _ in pairs(t) do
+		if type(k) ~= "number" then return false end
+		if k > max then max = k end
 		count = count + 1
-		if t[count] == nil then return false end
 	end
-	return true
+	return max == count
 end
+
 
 function JsonEncoder.encode(value)
 	local vtype = type(value)
