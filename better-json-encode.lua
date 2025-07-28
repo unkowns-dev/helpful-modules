@@ -1,6 +1,6 @@
 --[[
 so story behind this 
-i tried foolishly to send a request to github but roblox's httpservice:jsonencode is absolute trash so i had to make my own 
+i tried foolishly to send a request to a endpoint but roblox's httpservice:jsonencode is absolute trash so i had to make my own 
 feel free to use this for any project if u dont wnna use roblox's absolute trash functions
 ]]
 
